@@ -1,14 +1,15 @@
 server:
-  port: 8080
+  port: 8081
 
 spring:
   datasource:
-    name: test
-    url: jdbc:mysql://127.0.0.1:3306/dbgirl?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
-    username: root
-    password: 123
+    #url: jdbc:mysql://127.0.0.1:3306/dbgirl?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    url: jdbc:mysql://192.168.22.66:3306/sf_school?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&allowPublicKeyRetrieval=true
+    username: schoolfuture
+    password: schoolfuture
 
 #配置mybatis
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-  type-aliases-package: com.example.model
+  type-aliases-package: com.example.sbmybatis
+
